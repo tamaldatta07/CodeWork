@@ -1,6 +1,8 @@
 import java.util.*;
+
 public class SamplePattern18 {
     public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
 
         int nst = n;
@@ -21,11 +23,20 @@ public class SamplePattern18 {
             } else {
                 nsp--;
                 nst = nst + 2;
+
             }
             System.out.println();
-
+            scn.close();
         }
 
     }
 
 }
+//7
+// *       *       *       *       *       *       *
+//         *       *       *       *       *
+//                 *       *       *
+//                         *
+//                 *       *       *
+//         *       *       *       *       *
+// *       *       *       *       *       *       *
