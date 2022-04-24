@@ -9,6 +9,6 @@ public class gcdAndlcm {
       int rem = num1 % num2;
       num1 = num2;
       num2 = rem;
-    }
+    }scn.close();
   }
 }

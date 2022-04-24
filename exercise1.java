@@ -6,8 +6,9 @@ public class exercise1 {
         int n = scn.nextInt();
         System.out.print("Input number: ");
         System.out.printf("%d + %d%d  + %d%d%d\n", n, n, n, n, n, n);
+        scn.close();
     }
-    // scn.close();
+     
 }
 
 // Accepts an integer (n) and computes the value of n+nn+nnn
