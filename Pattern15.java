@@ -9,12 +9,13 @@ public class Pattern15 {
         int row = 1, nspaces = n / 2, nstars = 1, num = 1;
 
         while (row <= n) {
-            for (int i = 1; i <= nspaces; i++) {
+            // Code for each row
+            for (int i = 1; i <= nspaces; i++) { //Spaces
                 System.out.print("\t");
             }
 
             int temp = num;
-            for (int i = 1; i <= nstars; i++) {
+            for (int i = 1; i <= nstars; i++) { //Numbers
                 System.out.print(temp + "\t");
                 if (i <= nstars / 2) {
                     temp = temp + 1;
@@ -25,14 +26,14 @@ public class Pattern15 {
             System.out.println();
 
             // preparation of next loop
-            if (row <= n / 2) {
+            if (row <= n / 2) { //First Half
                 nspaces = nspaces - 1;
                 nstars = nstars + 2;
                 num = num + 1;
-            } else {
+            } else { //Second Half
                 nspaces = nspaces + 1;
                 nstars = nstars - 2;
-                num = num - 1;
+                num = num - 1; 
             }
             row++;
             scn.close();
