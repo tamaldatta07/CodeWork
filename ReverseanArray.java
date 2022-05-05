@@ -1,24 +1,26 @@
-
 import java.io.*;
 // import java.util.*;
 
-public class inverseOfanArray {
+public class ReverseanArray {
     public static void display(int[] a) {
         StringBuilder sb = new StringBuilder();
 
         for (int val : a) {
-            sb.append(val + "\n");
+            sb.append(val + " ");
         }
         System.out.println(sb);
     }
 
-    public static int[] inverse(int[] a) {
-        int[] inv = new int[a.length];
-        for (int index = 0; index < a.length; index++) {
-            int val = a[index];
-            inv[val] = index;
+    public static void reverse(int[] a) {
+        int low = 0, high = a.length - 1;
+        // swap
+        while (low < high) {
+            int ele = a[low];
+            a[low] = a[high];
+            a[high] = ele;
+            low++;
+            high--;
         }
-        return inv;
     }
 
     public static void main(String[] args) throws Exception {
@@ -30,21 +32,15 @@ public class inverseOfanArray {
             a[i] = Integer.parseInt(br.readLine());
         }
 
-        int[] inv = inverse(a);
-        display(inv);
+        reverse(a);
+        display(a); 
     }
 
 }
-
-// 5 -->Size of Array
-// 4 -->0 index
-// 0 -->1 index
-// 2 -->2 index
-// 3 -->3 index
-// 1 -->4 index
-
+// 5 --> Size of Array
 // 1
-// 4
 // 2
 // 3
-// 0
+// 4
+// 5
+// 5 4 3 2 1 --> Result
