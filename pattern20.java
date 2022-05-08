@@ -7,17 +7,17 @@ public class pattern20 {
 
         int n = scn.nextInt();
 
-        for(int row = 1; row <= n ; row++){
-            for(int col = 1 ; col <= n ; col++){
-                if(col == 1 || col == n){
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= n; col++) {
+                if (col == 1 || col == n) {
                     System.out.print("*\t");
-                }else if(row == col || row + col == n+1){ // diag
-                    if(row >= n/2 + 1){
+                } else if (row == col || row + col == n + 1) { // diag
+                    if (row >= n / 2 + 1) {
                         System.out.print("*\t");
-                    }else{
+                    } else {
                         System.out.print("\t");
                     }
-                }else{
+                } else {
                     System.out.print("\t");
                 }
             }
@@ -27,3 +27,9 @@ public class pattern20 {
 
     }
 }
+// 5
+// *                               *
+// *                               *
+// *               *               *
+// *       *               *       *
+// *                               *
