@@ -1,4 +1,4 @@
-import java.util.*;
+// import java.util.*;
 
 public class ArrayDemo {
     public static void swap(int[] arr, int i, int j) {

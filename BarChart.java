@@ -1,4 +1,5 @@
-import java.util.*;
+
+// import java.util.*;
 import java.util.Scanner;
 
 public class BarChart {
@@ -28,5 +29,7 @@ public class BarChart {
             }
             System.out.println();
         }
+        scn.close();
     }
+
 }

@@ -1,4 +1,5 @@
-import java.util.*;
+
+// import java.util.*;
 import java.util.Scanner;
 
 public class SumofArrray {
@@ -51,5 +52,6 @@ public class SumofArrray {
         for (int val : sum) {
             System.out.println(val); // print the val
         }
+        scn.close();
     }
 }
