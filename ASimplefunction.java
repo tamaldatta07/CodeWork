@@ -1,10 +1,17 @@
 public class ASimplefunction {
     public static void main(String[] args) {
         Display();
+
+        System.out.println(myGreet("Tamal"));
     }
 
     static void Display() {
         System.out.println("Hello World");
+    }
+
+    static String myGreet(String name) {
+        String message = "Hello " + name;
+        return message;
     }
 }
 /*
