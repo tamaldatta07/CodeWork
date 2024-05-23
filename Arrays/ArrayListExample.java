@@ -32,5 +32,6 @@ public class ArrayListExample {
 
         // simple print
         // System.out.println(list);
+        scn.close();
     }
 }
