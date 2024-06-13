@@ -16,6 +16,7 @@ public class AddNumbersUsingFunction {
         int num2 = scn.nextInt();
 
         int sum = num1 + num2;
+        scn.close();
         return sum;
         // System.out.println("Sum of Two number is: " + sum);
 
