@@ -59,3 +59,4 @@ public class SecondLargeInArr {
         return secondLargest;
     }
 }
+// Better solution
