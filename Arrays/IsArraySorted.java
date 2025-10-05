@@ -25,16 +25,14 @@ public class IsArraySorted {
 
     // Method to check if array is sorted in ascending order
     static boolean isSorted(int[] nums) {
-        // Loop through array starting from index 1
+        // Loop through array from the 2nd element (index 1)
         for (int i = 1; i < nums.length; i++) {
-            // Compare current element with previous one
-            if (nums[i] >= nums[i - 1]) {
-                return true; // If condition satisfied, return true
-            } else {
-                return false; // If condition fails, return false
+            // If current element is smaller than the previous one, array is not sorted
+            if (nums[i] < nums[i - 1]) {
+                return false;
             }
         }
-        // Method must return something outside the loop as well
-        return true; // Default return (added to fix compilation issue)
+        // If the loop completes, array is sorted
+        return true;
     }
 }
